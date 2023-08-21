@@ -34,6 +34,9 @@ dateEl.onchange = (e) => {
         setInterval(setTime, 1);
     }
     else {
+        if(e.target.value === 'timer') {
+            window.location.href = "https://whynotkimhari.github.io/timer/";
+        }
         var qs = document.querySelector('.question');
         qs.innerHTML = '<h1>May deo co quyen ! <br> Restart lai di thang cho</h1>';
         rsEl.style.display = 'block';
